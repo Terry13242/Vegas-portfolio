@@ -2,68 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Samples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terry's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .card {
+            background: white;
+            width: 320px;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .card h3 {
+            margin-top: 15px;
+        }
+        .subject {
+            font-weight: bold;
+            color: #e91e63;
+            margin: 10px 0;
+        }
+        .card button {
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .card button:hover {
+            background: #d81b60;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>My Marketing Portfolio</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <div class="container">
-        <h2>Portfolio Samples</h2>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
 
-       <div class="card">
-    <img src="images/beauty.jpg" alt="Beauty Email">
-    <h3>Beauty / Skincare – Welcome Flow</h3>
-    <p style="color:#e91e63; font-weight:bold;">Subject: Your Glow Journey Starts Now ✨</p>
-    <p>Hi [First Name], Welcome to Lumière Skin — where real results meet real confidence. Enjoy 10% OFF your first order with code: <strong>GLOW10</strong>.</p>
-    <button style="background:#e91e63; color:white;">Shop Now →</button>
-</div>
-
-
-        <!-- Sample 2: Fitness -->
+    <!-- Portfolio Cards -->
+    <div class="portfolio-container">
+        <!-- Beauty / Skincare -->
         <div class="card">
-            <img src="https://via.placeholder.com/300x200?text=Fitness+Email" alt="Fitness Email">
+            <img src="images/beauty.jpg" alt="Beauty Email">
+            <h3>Beauty / Skincare – Welcome Flow</h3>
+            <p class="subject">Subject: Your Glow Journey Starts Now ✨</p>
+            <p>Hi [First Name], Welcome to Lumière Skin — where real results meet real confidence. Enjoy 10% OFF your first order with code: <strong>GLOW10</strong>.</p>
+            <button>Shop Now →</button>
+        </div>
+
+        <!-- Fitness -->
+        <div class="card">
+            <img src="images/fitness.jpg" alt="Fitness Email">
             <h3>Fitness – Abandoned Cart</h3>
-            <p>Energetic, motivational email to recover abandoned carts.</p>
-            <button>View Details</button>
+            <p class="subject">Subject: Your Goals Are Waiting 💪</p>
+            <p>Hey [First Name], your fitness gear is still in your cart — and so are your goals. Complete your order today and get back on track with gear built to perform.</p>
+            <button>Finish Checkout →</button>
         </div>
 
-        <!-- Sample 3: Tech Product -->
+        <!-- Tech -->
         <div class="card">
-            <img src="https://via.placeholder.com/300x200?text=Tech+Email" alt="Tech Email">
+            <img src="images/tech.jpg" alt="Tech Email">
             <h3>Tech Product – Launch Campaign</h3>
-            <p>Clean, confident email introducing a new product.</p>
-            <button>View Details</button>
+            <p class="subject">Subject: Meet the Future of Productivity 🚀</p>
+            <p>Introducing the NovaPad Pro. Ultra-lightweight, 12-hour battery life, seamless device sync. Upgrade how you work.</p>
+            <button>Order Now →</button>
         </div>
 
-        <!-- Sample 4: Fashion -->
+        <!-- Fashion -->
         <div class="card">
-            <img src="https://via.placeholder.com/300x200?text=Fashion+Email" alt="Fashion Email">
-            <h3>Fashion – Flash Sale Campaign</h3>
-            <p>Bold, stylish email promoting a flash sale.</p>
-            <button>View Details</button>
+            <img src="images/fashion.jpg" alt="Fashion Email">
+            <h3>Fashion – Flash Sale</h3>
+            <p class="subject">Subject: 24 Hours. No Rules.</p>
+            <p>The styles you saved? They’re now 30% OFF. Only for the next 24 hours — your size won’t wait.</p>
+            <button>Shop the Sale →</button>
         </div>
 
-        <!-- Sample 5: SMS -->
+        <!-- SMS -->
         <div class="card">
-            <img src="https://via.placeholder.com/300x200?text=SMS+Examples" alt="SMS Examples">
+            <img src="images/sms.jpg" alt="SMS Examples">
             <h3>SMS Retention Examples</h3>
-            <p>Examples of SMS campaigns for retention and engagement.</p>
-            <button>View Details</button>
+            <p class="subject">Sample Messages:</p>
+            <ul style="text-align:left;">
+                <li>“Still thinking it over? Your cart is waiting 🛒 Complete your order now: [link]”</li>
+                <li>“Flash Sale ends in 3 hours ⏳ Don’t miss 30% OFF: [link]”</li>
+                <li>“Welcome! Enjoy 10% OFF code START10 💙 Shop here: [link]”</li>
+            </ul>
+            <button>View SMS →</button>
         </div>
-
     </div>
 
     <footer>
-        &copy; 2026 My Marketing Portfolio
+        &copy; 2026 Terry. All rights reserved.
     </footer>
+
 </body>
 </html>
