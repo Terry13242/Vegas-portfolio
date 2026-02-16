@@ -2,28 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Marketing Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terry's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: #e91e63;
+            color: white;
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .btn-portfolio {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            background: white;
+            color: #e91e63;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn-portfolio:hover {
+            background: #fce4ec;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Header Section -->
     <header>
-        <h1>My Marketing Portfolio</h1>
-        <nav>
-    <a href="index.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-</nav>
+        <h1>Hi, I'm Terry</h1>
+        <p>I specialize in retention-focused email & SMS marketing for e-commerce and B2C brands.</p>
+        <a href="portfolio.html" class="btn-portfolio">View Portfolio</a>
     </header>
 
-    <div class="container">
-        <h2>Welcome!</h2>
-        <p>I specialize in retention-focused email & SMS marketing for e-commerce and B2C brands. Explore my portfolio below.</p>
-    </div>
+    <!-- Optional About Section -->
+    <section style="padding:40px 20px; text-align:center;">
+        <h2>About Me</h2>
+        <p>My approach combines conversion psychology, structured flows, and brand-aligned messaging to increase engagement, repeat purchases, and customer lifetime value.</p>
+    </section>
 
     <footer>
-        &copy; 2026 My Marketing Portfolio
+        &copy; 2026 Terry. All rights reserved.
     </footer>
+
 </body>
 </html>
-
